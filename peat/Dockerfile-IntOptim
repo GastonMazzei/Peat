@@ -1,0 +1,18 @@
+FROM intel/intel-optimized-tensorflow 
+
+ENV A extras
+RUN mkdir $A
+WORKDIR $A
+
+COPY requirements.txt .
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+ENV A workdir
+RUN mkdir $B
+WORKDIR $B
+
+COPY . .
+

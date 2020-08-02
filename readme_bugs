@@ -1,0 +1,12 @@
+------------------------------known-issues-------------------------------------------    
+.ISSUE 1: "Memory Buildup" 
+.NOT SOLVED YET: 
+Tensorflow backend (i.e. tensorflow.keras.backend.clear_session()) is being ignored so
+multiple model-training will lead to a memory buildup 
+
+
+** Example AI-Script is using the "Mobile Price Classification Dataset" from kaggle;
+a well-behaved classification problem suited for a lightweight 10-neurons 2-layers 
+~100-epochs neural network which was considered perfect for demonstration purposes
+https://www.kaggle.com/iabhishekofficial/mobile-price-classification?select=train.csv
+

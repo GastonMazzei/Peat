@@ -1,0 +1,31 @@
+------------------------------------------------------------------------------------
+HELLO, WELCOME TO THE INTEL-OPTIMIZED CONTEXT IN WHICH TO RUN TENSORFLOW-PYTHON 
+SCRIPTS.
+------------------------------------------------------------------------------------
+
+                               SHORT TUTORIAL:
+
+    1)    PASTE IN THE CURRENT FOLDER THE SCRIPT YOU WANT TO RUN, ALONG WITH ALL THE
+          OTHER REQUIRED SCRIPTS & FILES: YOU CANNOT REFERENCE STUFF OUTSIDE THIS
+          FOLDER. 
+
+    2)    NAME YOUR STARTING SCRIPT "main.py" 
+
+   
+    3)    RUN "bash run.sh" ON THE COMMAND LINE AND SELECT THE REQUIRED LEVELS OF CPU
+          & MEMORY USAGE.
+
+                               ---THATS IT*--
+.....................................................................................
+Your Script will now be running inside a CPU-&-Memory constrained docker container 
+in an Intel-CPU-Optimized fashion
+.....................................................................................
+                               *TWO LAST THINGS
+1. If you are using a non-standard library besides tensorflow, scikit, numpy, pandas, 
+keras, mtplotlib, seaborn, pickle or json then you may need to add it to the 
+self-explanatory file called "peat/requirements.txt". This solves the "missing library"
+issue
+
+2. Sometimes running "Docker" requires "sudo". Even tho runnng "sudo bash run.sh" might
+be scary, I encourage you to open all the files and check for yourself that they are safe
+----------------------------------END-------------------------------------------------

@@ -1,0 +1,21 @@
+# Tensorflow-Based AI-Projects Usual Requirements
+
+# TLDR: an error-free process requires this file
+# to have all your "imports" of the python script 
+# header
+
+# Files here should be the ones your project require.
+# if you are getting an ERROR message of missing lirbary  
+# then you should add its name here!
+
+# also: you can force version (e.g. pandas==0.2.5)
+
+tensorflow
+scikit-learn
+numpy
+pandas
+Keras
+matplotlib
+seaborn
+pickle
+json

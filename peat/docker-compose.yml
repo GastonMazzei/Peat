@@ -1,0 +1,21 @@
+
+version: '2.4'
+services:
+  IntOptim:
+    image: intel/intel-optimized-tensorflow
+    build:
+      context: .
+      dockerfile: Dockerfile-IntOptim
+    volumes:
+      - "../:/workdir"
+      - "./:/extras"
+    #mem_limit: 4000m #RAM
+    #memswap_limit: 4000m #RAM+SWAP
+    #cpu_percent: 50 #WINDOWS
+    #cpu_count: 4 #WINDOWS
+    #cpus: 2 #LINUX
+    #cpuset: 0,1,2,3 #LINUX
+    restart: on-failure
+volumes:
+    uploads:
+  
